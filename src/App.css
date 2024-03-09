@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,400;1,700&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+    overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar */
+header::before{
+  background: url('./img/bg.jpg') no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+.navbar-items{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.navbar .navbar-items .item{
+list-style: none;
+padding: 25px 10px;
+font-weight: bolder;
+font-size: 21px;
+}
+.home{
+  margin: auto;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.home h1{
+  font-weight: 800;
+  padding: 10px 20px;
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home p{
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.home::after{
+  content: "LETS BUILD SOMETHING GREAT";
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 100%;
+  padding:25px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: white;
+}
+.section-3 {
+  position: relative;
+  top: 335px;
+  height: 100vh;
+/* margin-bottom: -60px; */
+}
+.section-3 .left{
+  height: 740px;
+  border: 2px solid white;
+}
+.section-3 .left img{
+  width: 100%;
+  height: 100%;
+}
+.section-3 .right {
+  border: 2px solid white;
+  height: 740px;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.section-3 .right h3 {
+  padding: 4x;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.section-3 .right p{
+  padding: 4px;
+  margin:2px;
+  font-weight: bold;
+}
+.section-3 .right button{
+  align-self: flex-start;
+  margin: 5px;
+}
+.carousel{
+  position: relative;
+  top: 338px;
+}
+.review{
+  background-color: white;
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+.review-left img{
+  border: 8px solid rgb(238, 189, 221);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 100%;
+}
+.review-right {
+  color: black;
+  padding: 10px;
+}
+.footer{
+  position: relative;
+  background-color: yellow;
+  height: 40vh;
+  top: 400px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.column{
+  height: 30vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.column li{
+  list-style: none;
+}
+.column-contact{
+  display: flex;
+  flex-direction: column;
+}
+.column-contact p{
+  text-align: justify;
+}
+.footer-bottom{
+  border-top: 1px solid black;
+  width: 90%;
+  padding: 10px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom .two{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
